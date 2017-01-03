@@ -1,0 +1,4 @@
+*.vcxproj
+*.vcxproj.*
+Release/
+Debug/
