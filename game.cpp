@@ -224,7 +224,7 @@ void Hooks::nUpdateCamera()
 
 void WINAPI onUpdateActionable(Actionable* actionable)
 {
-	if (actionable->type == 0x11 && actionable->flags1 && actionable->flags2)
+	if (actionable->type == 0x11 && actionable->flags1 && !actionable->ptr)
 	{
 		radar.AddChestPosition(actionable->posX, actionable->posY, actionable->posZ);
 	}

@@ -129,11 +129,13 @@ struct Actionable
 	unsigned int flags2;	// 0x18
 	char unk2[0x18];
 	unsigned int type;		// 0x34
-	char unk3[0x34];
+	char unk3[0x0C];
+	void* ptr;				// 0x44
+	char unk4[0x24];
 	float posX;				// 0x6C
-	char unk4[0xC];
-	float posY;				// 0x7C
 	char unk5[0xC];
+	float posY;				// 0x7C
+	char unk6[0xC];
 	float posZ;				// 0x8C
 };
 
